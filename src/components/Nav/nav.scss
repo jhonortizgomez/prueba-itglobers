@@ -1,0 +1,84 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to bottom,
+    #0000009b,
+    #00000081,
+    #0000006c,
+    #00000029,
+    #00000000
+  );
+
+  & .categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 30rem;
+    color: white;
+
+    & div {
+      padding: 0 2rem;
+    }
+    &-puff {
+      text-align: center;
+      border-right: 0.1rem solid rgba(255, 255, 255, 0.494);
+      & span {
+        font-size: 2.5rem;
+      }
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+    &-rain {
+      text-align: center;
+      border-right: 0.1rem solid rgba(255, 255, 255, 0.494);
+      & span {
+        font-size: 2.5rem;
+        transform: rotate(30deg);
+      }
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+    &-cart {
+      text-align: center;
+      border-right: 0.1rem solid rgba(255, 255, 255, 0.494);
+      & span {
+        font-size: 2.5rem;
+      }
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+    &-nap {
+      text-align: center;
+
+      & span {
+        font-size: 2.5rem;
+      }
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  & .login {
+    display: flex;
+    color: white;
+    margin-top: 3rem;
+    margin-right: 4rem;
+    &-account {
+      display: flex;
+      height: 1.5rem;
+      padding: 0 0.5rem;
+      margin: 0 0.5rem;
+      border-right: 0.1rem solid rgba(255, 255, 255, 0.494);
+      & span {
+        font-size: 1.4rem;
+      }
+    }
+    &-cart {
+      padding: 0 0.5rem;
+    }
+  }
+}
