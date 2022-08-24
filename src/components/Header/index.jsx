@@ -8,7 +8,7 @@ export const Header = () => {
       <div
         id="carouselExampleIndicators"
         className="carousel slide contenedor"
-        data-bs-ride="false"
+        data-bs-ride="true"
       >
         <div className="carousel-indicators">
           <button
