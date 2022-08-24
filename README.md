@@ -29,6 +29,12 @@ Webpack fue utilizado para empaquetar y compilar el proyecto.
 
 SASS se utilizó para darle los estilos al proyecto.
 
+### Bootstrap
+
+[v5.2.0](https://sass-lang.com/)
+
+Bootstrap se utilizó para darle estilos al carrusel
+
 ## Scripts Disponibles
 
 En este proyecto puedes utilizar los siguientes scripts:
