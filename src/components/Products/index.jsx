@@ -1,5 +1,7 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { IoMdArrowDropleft } from "react-icons/io";
+import { IoMdArrowDropright } from "react-icons/io";
 import "./products.scss";
 
 export const Products = () => {
@@ -8,7 +10,12 @@ export const Products = () => {
       <div className="rain">
         <div className="rain-image">
           <img src="https://images.pexels.com/photos/1451040/pexels-photo-1451040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-          <div className="bg"></div>
+          <div className="bg">
+            <span>
+              <IoMdArrowDropleft />
+            </span>
+            <div className="bg-button">SHOP</div>
+          </div>
         </div>
         <div className="rain-info">
           <img src="https://i.pinimg.com/originals/6e/62/b9/6e62b938e6d094f56473397d7ed649d9.png" />
@@ -16,10 +23,12 @@ export const Products = () => {
           <span className="line"></span>
           <p>Descripción del producto. Este es un texto simulado.</p>
           <div className="rain-info__callToAction">
-            <span>
-              <MdKeyboardArrowRight />
-            </span>
-            <p>VER MAS</p>
+            <p>
+              <span>
+                <MdKeyboardArrowRight />
+              </span>
+              VER MAS
+            </p>
           </div>
         </div>
       </div>
@@ -31,22 +40,34 @@ export const Products = () => {
           <span className="line"></span>
           <p>Descripción del producto. Este es un texto simulado.</p>
           <div className="puff-info__callToAction">
-            <span>
-              <MdKeyboardArrowRight />
-            </span>
-            <p>VER MAS</p>
+            <p>
+              <span>
+                <MdKeyboardArrowRight />
+              </span>
+              VER MAS
+            </p>
           </div>
         </div>
         <div className="puff-image">
           <img src="https://media.istockphoto.com/photos/young-adult-man-listening-to-music-in-his-bedroom-with-his-dog-picture-id1182703008?k=20&m=1182703008&s=612x612&w=0&h=05dfdPOVoildk4g671m60jLD529CeQoHstzbIkeHzi4=" />
-          <div className="bg"></div>
+          <div className="bg">
+            <span>
+              <IoMdArrowDropright />
+            </span>
+            <div className="bg-button">SHOP</div>
+          </div>
         </div>
       </div>
 
       <div className="cart">
         <div className="cart-image">
           <img src="https://images.pexels.com/photos/7194911/pexels-photo-7194911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-          <div className="bg"></div>
+          <div className="bg">
+            <span>
+              <IoMdArrowDropleft />
+            </span>
+            <div className="bg-button">SHOP</div>
+          </div>
         </div>
         <div className="cart-info">
           <img src="https://www.pngmart.com/files/14/Vector-Shopping-Bag-Transparent-PNG.png" />
@@ -54,10 +75,12 @@ export const Products = () => {
           <span className="line"></span>
           <p>Descripción del producto. Este es un texto simulado.</p>
           <div className="cart-info__callToAction">
-            <span>
-              <MdKeyboardArrowRight />
-            </span>
-            <p>VER MAS</p>
+            <p>
+              <span>
+                <MdKeyboardArrowRight />
+              </span>
+              VER MAS
+            </p>
           </div>
         </div>
       </div>
@@ -69,15 +92,22 @@ export const Products = () => {
           <span className="line"></span>
           <p>Descripción del producto. Este es un texto simulado.</p>
           <div className="nap-info__callToAction">
-            <span>
-              <MdKeyboardArrowRight />
-            </span>
-            <p>VER MAS</p>
+            <p>
+              <span>
+                <MdKeyboardArrowRight />
+              </span>
+              VER MAS
+            </p>
           </div>
         </div>
         <div className="nap-image">
           <img src="https://images.pexels.com/photos/1248583/pexels-photo-1248583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-          <div className="bg"></div>
+          <div className="bg">
+            <span>
+              <IoMdArrowDropright />
+            </span>
+            <div className="bg-button">SHOP</div>
+          </div>
         </div>
       </div>
     </section>

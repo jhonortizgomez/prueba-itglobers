@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { sendEmailService } from "../../services/sendEmail";
 import "./newsletter.scss";
 
 export const Newsletter = () => {
+  const [email, setEmail] = useState("");
+  const [emailValidation, setEmailValidation] = useState("");
+
+  function validateEmail() {
+    const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email.match(mailformat)) {
+      setEmailValidation("");
+      return true;
+    } else {
+      setEmailValidation("El email es incorrecto.");
+      return false;
+    }
+  }
+
+  function sendEmail(e) {
+    e.preventDefault();
+    const isValidEmail = validateEmail();
+    if (isValidEmail) {
+      sendEmailService(email);
+    }
+  }
+
   return (
     <section className="newsletter">
       <div className="newsletter-social">
@@ -29,9 +53,31 @@ export const Newsletter = () => {
         </div>
       </div>
       <h3>NEWSLETTER</h3>
-      <h2>SUSCRIBETE</h2>
+      <h2>SUSCRIBITE</h2>
       <p>y enterate de todas las novedades</p>
-      <input />
+      <section className="newsletter-input">
+        <div className="newsletter-input__container">
+          <form
+            name="form"
+            id="formEmail"
+            onSubmit={sendEmail}
+            action="https://formspree.io/f/mnqrnpjg"
+          >
+            <input
+              type="text"
+              name="email"
+              placeholder="Ingresa tu email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button type="submit">
+              <IoIosArrowRoundForward />
+            </button>
+          </form>
+        </div>
+        <span>{emailValidation}</span>
+      </section>
     </section>
   );
 };

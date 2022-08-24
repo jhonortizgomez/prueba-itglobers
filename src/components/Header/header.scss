@@ -1,45 +1,60 @@
 header {
   width: 100%;
+  position: relative;
 
-  & .carrousel {
-    position: relative;
+  & .contenedor {
     height: auto;
+
     & picture {
       width: 100%;
       height: 100%;
       img {
         width: 100%;
-        height: 100%;
+        max-height: 70vh;
       }
     }
   }
   & .info {
-    // z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 6.5rem;
+    bottom: 0rem;
 
     & h1 {
       text-align: center;
       font-size: 4rem;
-      width: 47rem;
+      max-width: 43rem;
       margin: 6rem auto;
       color: white;
-      font-weight: 500;
-      background-color: rgba(0, 0, 0, 0.104);
+      font-weight: 400;
     }
     &-button {
       text-align: center;
       color: white;
-      border: 0.2rem solid rgba(255, 255, 255, 0.659);
+      border: 0.2rem solid white;
       max-width: 10rem;
-      margin: 13rem auto 0;
-      padding: 1.2rem;
+      margin: 0 auto;
+      padding: 0.9rem 1.1rem;
       font-size: 1.3rem;
       font-weight: 300;
-      background-color: rgba(0, 0, 0, 0.204);
+      position: absolute;
+      bottom: 7rem;
+      right: 0;
+      left: 0rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    & .info {
+      & h1 {
+        font-size: 1.2rem;
+        max-width: 25rem;
+        margin: 0 auto;
+      }
     }
   }
 }

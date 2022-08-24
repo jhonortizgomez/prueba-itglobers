@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <footer>
       <section className="footer-top">
-        <div>
+        <div className="logo">
           <LogoBlack />
         </div>
         <div className="footer-top__categories">
@@ -22,6 +22,7 @@ export const Footer = () => {
             <li>PUFI NAP</li>
           </ul>
         </div>
+        <span className="si"></span>
         <div className="footer-top__help">
           <ul>
             <li>CONTACTO</li>
@@ -30,29 +31,35 @@ export const Footer = () => {
             <li>TÉRMINOS & CONDICIONES</li>
           </ul>
         </div>
+        <span className="si"></span>
         <div className="footer-top__security">
           <p>COMPRA 100% SEGURA</p>
           <div className="footer-top__security-icons">
-            <span>
-              <FcDataProtection />
-            </span>
-            <span>
-              <BiShieldQuarter />
-            </span>
-            <p>COMPRÁ CON LA GARANTIA DE PUFF</p>
+            <div className="footer-top__security-icons-container">
+              <span>
+                <FcDataProtection />
+              </span>
+              <span>
+                <BiShieldQuarter />
+              </span>
+              <p>COMPRÁ CON LA GARANTIA DE PUFF</p>
+            </div>
           </div>
         </div>
+        <span className="si"></span>
         <div className="footer-top__social">
-          <p>SEGUINOS EN</p>
-          <span>
-            <FaFacebookF />
-          </span>
-          <span>
-            <AiOutlineTwitter />
-          </span>
-          <span>
-            <AiOutlineInstagram />
-          </span>
+          <div className="footer-top__social-container">
+            <p>SEGUINOS EN</p>
+            <span>
+              <FaFacebookF />
+            </span>
+            <span>
+              <AiOutlineTwitter />
+            </span>
+            <span>
+              <AiOutlineInstagram />
+            </span>
+          </div>
         </div>
       </section>
       <section className="footer-botton">
