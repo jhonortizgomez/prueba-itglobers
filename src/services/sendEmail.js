@@ -1,5 +1,4 @@
 export function sendEmailService(email) {
-  console.log("enviando email", email);
   const form = document.getElementById("formEmail");
 
   async function handleSubmit(e) {

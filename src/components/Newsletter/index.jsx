@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { connect } from "react-redux";
+
+import { setEmail as setEmailAction } from "../../redux/actions";
 import { sendEmailService } from "../../services/sendEmail";
 import "./newsletter.scss";
 
-export const Newsletter = () => {
-  const [email, setEmail] = useState("");
+export const Newsletter = ({ email, setEmail }) => {
   const [emailValidation, setEmailValidation] = useState("");
+  console.log("email", email);
 
   function validateEmail() {
     const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -21,6 +24,7 @@ export const Newsletter = () => {
   function sendEmail(e) {
     e.preventDefault();
     const isValidEmail = validateEmail();
+    console.log("valid", isValidEmail);
     if (isValidEmail) {
       sendEmailService(email);
     }
@@ -61,7 +65,7 @@ export const Newsletter = () => {
             name="form"
             id="formEmail"
             onSubmit={sendEmail}
-            action="https://formspree.io/f/mnqrnpjg"
+            // action="https://formspree.io/f/mnqrnpjg"
           >
             <input
               type="text"
@@ -81,3 +85,16 @@ export const Newsletter = () => {
     </section>
   );
 };
+
+const mapStateToProps = (state) => {
+  console.log("state", state);
+  return {
+    email: state.emailReducer.email,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  setEmail: (value) => dispatch(setEmailAction(value)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Newsletter);
