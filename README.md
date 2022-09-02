@@ -6,16 +6,16 @@
 
 [v18.2.0](https://es.reactjs.org/)
 
-React Fue utilizado para:
+React fue utilizado para:
 
 - Crear componentes.
 - Manejo de estados.
 
-### React Icons
+### Redux
 
-[v4.4.0](https://react-icons.github.io/react-icons/)
+[v4.2.0](https://redux.js.org/)
 
-React icons fue utilizada para implementar los iconos del proyecto.
+Redux fue utilizado para el manejo de estados.
 
 ### Webpack
 
@@ -28,6 +28,12 @@ Webpack fue utilizado para empaquetar y compilar el proyecto.
 [v1.54.5](https://sass-lang.com/)
 
 SASS se utilizó para darle los estilos al proyecto.
+
+### React Icons
+
+[v4.4.0](https://react-icons.github.io/react-icons/)
+
+React icons fue utilizada para implementar los iconos del proyecto.
 
 ### Bootstrap
 
