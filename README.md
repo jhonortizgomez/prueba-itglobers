@@ -1,5 +1,7 @@
 # [Prueba ItGlobers](https://jhonortizgomez.github.io/prueba-itglobers/)
 
+¡Bienvenido/a al proyecto "Prueba ItGlobers"! Mi nombre es Jhon Ortiz Gómez, y estoy emocionado de presentarte este proyecto en el que he trabajado con dedicación. Aquí, te proporciono una visión general de las tecnologías utilizadas y los aspectos destacados del desarrollo.
+
 ## Tecnologias utilizadas
 
 ### React
